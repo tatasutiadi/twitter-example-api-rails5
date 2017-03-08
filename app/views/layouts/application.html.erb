@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Twitter Example</title>
+
+    <%= csrf_meta_tags %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  </head>
+
+  <body>
+
+  <nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="#">Twitter Example</a>
+      </div>
+      <div id="navbar" class="navbar-collapse collapse">
+        <div class="navbar-form navbar-right">
+          <img src="http://icons.iconarchive.com/icons/custom-icon-design/all-country-flag/32/Indonesia-Flag-icon.png">
+          <img src="http://icons.iconarchive.com/icons/custom-icon-design/all-country-flag/32/United-Kingdom-flag-icon.png">
+        </div>
+      </div><!--/.navbar-collapse -->
+    </div>
+  </nav>
+  <!-- Main jumbotron for a primary marketing message or call to action -->
+  <div class="jumbotron">
+    <div class="container">
+      <h2 style="align: center;">What would you like to track in real-time?.</h2>
+
+      <div class="form-group has-success has-feedback">
+        <div class="input-group">
+          <span class="input-group-addon"><i class="fa fa-hashtag fa-1x"></i></span>
+          <input type="text" placeholder="Enter #hastag to track" class="form-control input-lg" id="inputGroupSuccess1" aria-describedby="inputGroupSuccess1Status">
+        </div>
+        <span class="fa fa-search fa-2x form-control-feedback-app" aria-hidden="true"></span>
+        <span id="inputGroupSuccess1Status" class="sr-only">(success)</span>
+      </div>
+      <div class="row">
+        <div class="col-md-1">
+          <div class="checkbox">
+            <label class="checkbox-bootstrap checkbox-lg">
+              <input type="checkbox" id="checkboxWarning" value="option1" checked>
+              <span class="checkbox-placeholder"></span>
+              <div  style="margin: -27px 0px 0px 19px"><i class="fa fa-twitter fa-2x"></i></div>
+            </label>
+          </div>
+        </div>
+        <div class="col-md-1">
+          <div class="checkbox">
+            <label class="checkbox-bootstrap checkbox-lg">
+              <input type="checkbox" id="checkboxWarning" value="option1" disabled>
+              <span class="checkbox-placeholder"></span>
+              <div  style="margin: -27px 0px 0px 19px"><i class="fa fa-instagram fa-2x"></i></div>
+            </label>
+          </div>
+        </div>
+        <div class="col-md-1">
+          <div class="checkbox">
+            <label class="checkbox-bootstrap checkbox-lg">
+              <input type="checkbox" id="checkboxWarning" value="option1" disabled>
+              <span class="checkbox-placeholder"></span>
+              <div  style="margin: -27px 0px 0px 19px"><i class="fa fa-facebook fa-2x"></i></div>
+
+            </label>
+          </div>
+        </div>
+
+
+
+
+
+
+      </div>
+
+
+
+    </div>
+  </div>
+  <div class="container">
+    <%= yield %>
+    <footer>
+      <p>&copy; 2016 Company, Inc.</p>
+    </footer>
+  </div>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  </body>
+</html>
